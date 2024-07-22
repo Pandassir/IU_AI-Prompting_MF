@@ -70,7 +70,7 @@ class GPTManager:
         """
         name, surname, study, dual, appr, hobbys, subjects, bores, work_pref = student_data[1:]
 
-        if study == "hoch":
+        if study == "high":
             prompt = (
                 f"Create a detailed consultation text for a student and address them directly, who is interested in pursuing higher education. "
                 f"Do not include greetings or farewells, only the sections listed below as specified."
@@ -90,7 +90,7 @@ class GPTManager:
                 f"Remain professional and objective, and use the 'you' form."
             )
 
-        elif study == "mittel":
+        elif study == "medium":
             prompt = (
                 f"Create a moderate consultation text for a student and address them directly, who is interested in pursuing higher education. "
                 f"Do not include greetings or farewells, only the sections listed below as specified."
@@ -151,7 +151,7 @@ class GPTManager:
         """
         name, surname, study, dual, appr, hobbys, subjects, bores, work_pref = student_data[1:]
 
-        if dual == "hoch":
+        if dual == "high":
             prompt = (
                 f"Create a detailed consultation text for a student and address them directly, who is interested in a dual study program. "
                 f"Do not include greetings or farewells, only the sections below as specified."
@@ -171,7 +171,7 @@ class GPTManager:
                 f"Remain professional and objective and use the 'you' form."
             )
 
-        elif dual == "mittel":
+        elif dual == "medium":
             prompt = (
                 f"Create a moderate consultation text for a student and address them directly, who is interested in a dual study program. "
                 f"Do not include greetings or farewells, only the sections below as specified."
@@ -232,7 +232,7 @@ class GPTManager:
         """
         name, surname, study, dual, appr, hobbys, subjects, bores, work_pref = student_data[1:]
 
-        if appr == "hoch":
+        if appr == "high":
             prompt = (
                 f"Create a detailed consultation text for a student and address them directly, who is interested in an apprenticeship. "
                 f"Do not include greetings or farewells, only the sections below as specified. "
@@ -252,7 +252,7 @@ class GPTManager:
                 f"Remain professional and objective and use the 'you' form."
             )
 
-        elif appr == "mittel":
+        elif appr == "medium":
             prompt = (
                 f"Create a moderate consultation text for a student and address them directly, who is interested in an apprenticeship. "
                 f"Do not include greetings or farewells, only the sections below as specified. "
