@@ -72,9 +72,9 @@ class GPTManager:
 
         if study == "high":
             prompt = (
-                f"Create a detailed consultation text for a student and address them directly, who is interested in pursuing higher education. "
+                f"Create a detailed english consultation text for a student and address them directly, who is interested in pursuing higher education. "
                 f"Do not include greetings or farewells, only the sections listed below as specified."
-                f"Choose 3 different but suitable study programs that match the following student details: "
+                f"Choose 3 different but suitable study programs in Germany that match the following student details: "
                 f"1. Hobbies: {hobbys}. "
                 f"2. Favorite subjects: {subjects}. "
                 f"3. Bored by: {bores}. "
@@ -92,7 +92,7 @@ class GPTManager:
 
         elif study == "medium":
             prompt = (
-                f"Create a moderate consultation text for a student and address them directly, who is interested in pursuing higher education. "
+                f"Create a moderate english consultation text for a student and address them directly, who is interested in pursuing higher education. "
                 f"Do not include greetings or farewells, only the sections listed below as specified."
                 f"Choose 2 different but suitable study programs in Germany that match the following student details: "
                 f"1. Hobbies: {hobbys}. "
@@ -112,7 +112,7 @@ class GPTManager:
 
         else:
             prompt = (
-                f"Create a short consultation text for a student and address them directly, who is interested in pursuing higher education. "
+                f"Create a short english consultation text for a student and address them directly, who is interested in pursuing higher education. "
                 f"Choose 3 different but suitable study programs in Germany that match the following student details: "
                 f"1. Hobbies: {hobbys}. "
                 f"2. Favorite subjects: {subjects}. "
@@ -153,7 +153,7 @@ class GPTManager:
 
         if dual == "high":
             prompt = (
-                f"Create a detailed consultation text for a student and address them directly, who is interested in a dual study program. "
+                f"Create a detailed english consultation text for a student and address them directly, who is interested in a dual study program. "
                 f"Do not include greetings or farewells, only the sections below as specified."
                 f"Choose 3 different but suitable dual study programs in Germany that match the student's preferences: "
                 f"1. Hobbies: {hobbys}. "
@@ -173,7 +173,7 @@ class GPTManager:
 
         elif dual == "medium":
             prompt = (
-                f"Create a moderate consultation text for a student and address them directly, who is interested in a dual study program. "
+                f"Create a moderate english consultation text for a student and address them directly, who is interested in a dual study program. "
                 f"Do not include greetings or farewells, only the sections below as specified."
                 f"Choose 2 different but suitable dual study programs in Germany that match the student's preferences: "
                 f"1. Hobbies: {hobbys}. "
@@ -193,7 +193,7 @@ class GPTManager:
 
         else:
             prompt = (
-                f"Create a short consultation text for a student and address them directly, who is interested in a dual study program. "
+                f"Create a short english consultation text for a student and address them directly, who is interested in a dual study program. "
                 f"Choose 3 different but suitable dual study programs in Germany that match the student's preferences: "
                 f"1. Hobbies: {hobbys}. "
                 f"2. Favorite school subjects: {subjects}. "
@@ -234,9 +234,9 @@ class GPTManager:
 
         if appr == "high":
             prompt = (
-                f"Create a detailed consultation text for a student and address them directly, who is interested in an apprenticeship. "
+                f"Create a detailed english consultation text for a student and address them directly, who is interested in an apprenticeship. "
                 f"Do not include greetings or farewells, only the sections below as specified. "
-                f"Choose 3 different but suitable apprenticeships in Germany that match the student's preferences: "
+                f"Choose 3 different but suitable german apprenticeships in Germany that match the student's preferences: "
                 f"1. Hobbies: {hobbys}. "
                 f"2. Favorite school subjects: {subjects}. "
                 f"3. Bored by: {bores}. "
@@ -254,9 +254,9 @@ class GPTManager:
 
         elif appr == "medium":
             prompt = (
-                f"Create a moderate consultation text for a student and address them directly, who is interested in an apprenticeship. "
+                f"Create a moderate english consultation text for a student and address them directly, who is interested in an apprenticeship. "
                 f"Do not include greetings or farewells, only the sections below as specified. "
-                f"Choose 2 different but suitable apprenticeships in Germany that match the student's preferences: "
+                f"Choose 2 different but suitable german apprenticeships in Germany that match the student's preferences: "
                 f"1. Hobbies: {hobbys}. "
                 f"2. Favorite school subjects: {subjects}. "
                 f"3. Bored by: {bores}. "
@@ -274,8 +274,8 @@ class GPTManager:
 
         else:
             prompt = (
-                f"Create a short consultation text for a student and address them directly, who is interested in an apprenticeship. "
-                f"Choose 3 different but suitable apprenticeships in Germany that match the student's preferences: "
+                f"Create a short english consultation text for a student and address them directly, who is interested in an apprenticeship. "
+                f"Choose 3 different but suitable german apprenticeships in Germany that match the student's preferences: "
                 f"1. Hobbies: {hobbys}. "
                 f"2. Favorite school subjects: {subjects}. "
                 f"3. Bored by: {bores}. "
