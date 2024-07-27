@@ -31,18 +31,18 @@ class GPTManager:
         """
         name, surname, study, dual, appr, hobbys, subjects, bores, work_pref = student_data[1:]
 
-        prompt =(
-                f"First, write 'Welcome {surname, name}\n"
-                f"Do not include any closing remarks or greetings such as: Best regards or Sincerely or Good Luck."
-                f"Remain neutral and, if at all, talk about the student or the person addressed in the text."
-                f"Write a funny welcome text for a student who is just about to read a consultation text."
-                f"The consultation text refers to studies, dual studies or training. Please remain neutral, as the student does not yet know what they want to do."
-                f"Also write something about the surname {surname}, such as what another person has achieved through learning or practical work."
-                f"Also explain why learning, further education, and practical work are worthwhile."
-                f"Write something about how a good decision in career and studies as well as passion can positively impact life."
-                f"Finally, describe that the following sections are intended to help the student prepare better for the in-person consultation."
-                f"The welcome text must end with exact this sentence: The following sections are intended to help you better prepare for your personal career counseling session."
-                )              
+        prompt = (
+            f"First, write 'Welcome {surname, name}\n"
+            f"Do not include any closing remarks or greetings such as: Best regards or Sincerely or Good Luck."
+            f"Remain neutral and, if at all, talk about the student or the person addressed in the text."
+            f"Write a funny welcome text for a student who is just about to read a consultation text."
+            f"The consultation text refers to studies, dual studies or training. Please remain neutral, as the student does not yet know what they want to do."
+            f"Also write something about the surname {surname}, such as what another person has achieved through learning or practical work."
+            f"Also explain why learning, further education, and practical work are worthwhile."
+            f"Write something about how a good decision in career and studies as well as passion can positively impact life."
+            f"Finally, describe that the following sections are intended to help the student prepare better for the in-person consultation."
+            f"The welcome text must end with exact this sentence: The following sections are intended to help you better prepare for your personal career counseling session."
+        )              
                 
         response = openai.chat.completions.create(
             model="gpt-3.5-turbo",
