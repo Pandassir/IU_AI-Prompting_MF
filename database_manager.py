@@ -1,5 +1,5 @@
 import sqlite3
-import unittest
+
 
 class DatabaseManager:
     def __init__(self, db_name='db_information.db'):
@@ -32,17 +32,3 @@ class DatabaseManager:
         Closes the database connection.
         """
         self.connection.close()
-
-
-    def test_close(self):
-        """
-        Test the close method.
-        """
-        self.db_manager.close()
-        with self.assertRaises(sqlite3.ProgrammingError):
-            self.db_manager.cursor.execute('SELECT * FROM questions')
-
-def main():
-    unittest.main()
-if __name__ == '__main__':
-    main()
