@@ -32,7 +32,7 @@ class GPTManager:
         name, surname, study, dual, appr, hobbys, subjects, bores, work_pref = student_data[1:]
 
         prompt = (
-            f"First, write 'Welcome {surname, name}\n"
+            f"First, write for one student: 'Welcome {surname} {name}\n"
             f"Do not include any closing remarks or greetings such as: Best regards or Sincerely or Good Luck."
             f"Remain neutral and, if at all, talk about the student or the person addressed in the text."
             f"Write a funny welcome text for a student who is just about to read a consultation text."
