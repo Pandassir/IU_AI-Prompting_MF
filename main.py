@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 def main():
     ####### DB Area #######
     db_manager = DatabaseManager()                                  # db_name='db_information.db' is already specified in the class
-    student_id =4                                                # Define the student ID to retrieve
+    student_id =3                                                # Define the student ID to retrieve
     student_data = db_manager.get_student_data(student_id)          # Retrieve student data
 
     if student_data:                                                # Check if data was retrieved and print it
