@@ -72,7 +72,8 @@ class GPTManager:
 
         if study == "high":
             prompt = (
-                f"Create a detailed english consultation text for a student and address them directly, who is interested in a traditional dual apprenticeship in Germany. "
+                f"Create a detailed english consultation text for a student and address them directly,who is interested in pursuing higher education."
+                f"Please note, the study programs must be available in Germany."
                 f"Do not include greetings or farewells, only the sections listed below as specified."
                 f"Choose 3 different but suitable study programs in Germany that match the following student details: "
                 f"1. Hobbies: {hobbys}. "
@@ -93,6 +94,7 @@ class GPTManager:
         elif study == "medium":
             prompt = (
                 f"Create a moderate english consultation text for a student and address them directly, who is interested in pursuing higher education. "
+                f"Please note, the study programs must be available in Germany."
                 f"Do not include greetings or farewells, only the sections listed below as specified."
                 f"Choose 2 different but suitable study programs in Germany that match the following student details: "
                 f"1. Hobbies: {hobbys}. "
@@ -113,6 +115,7 @@ class GPTManager:
         else:
             prompt = (
                 f"Create a short english consultation text for a student and address them directly, who is interested in pursuing higher education. "
+                f"Please note, the study programs must be available in Germany."
                 f"Choose 3 different but suitable study programs in Germany that match the following student details: "
                 f"1. Hobbies: {hobbys}. "
                 f"2. Favorite subjects: {subjects}. "
@@ -153,7 +156,8 @@ class GPTManager:
 
         if dual == "high":
             prompt = (
-                f"Create a detailed english consultation text for a student and address them directly, who is interested in a traditional dual apprenticeship in Germany. "
+                f"Create a detailed english consultation text for a student and address them directly, who is interested in a dual study program."
+                f"Please note, the dual study programs must be available in Germany."
                 f"Do not include greetings or farewells, only the sections below as specified."
                 f"Choose 3 different but suitable dual study programs in Germany that match the student's preferences: "
                 f"1. Hobbies: {hobbys}. "
@@ -174,6 +178,7 @@ class GPTManager:
         elif dual == "medium":
             prompt = (
                 f"Create a moderate english consultation text for a student and address them directly, who is interested in a dual study program. "
+                f"Please note, the dual study programs must be available in Germany."
                 f"Do not include greetings or farewells, only the sections below as specified."
                 f"Choose 2 different but suitable dual study programs in Germany that match the student's preferences: "
                 f"1. Hobbies: {hobbys}. "
@@ -194,6 +199,7 @@ class GPTManager:
         else:
             prompt = (
                 f"Create a short english consultation text for a student and address them directly, who is interested in a dual study program. "
+                f"Please note, the dual study programs must be available in Germany."
                 f"Choose 3 different but suitable dual study programs in Germany that match the student's preferences: "
                 f"1. Hobbies: {hobbys}. "
                 f"2. Favorite school subjects: {subjects}. "
@@ -235,7 +241,7 @@ class GPTManager:
         if appr == "high":
             prompt = (
                 f"Create a detailed consultation text for a student and address them directly, who is interested in a traditional vocational training offered from german IHK. "
-                f"Please note that 'vocational training' refers to a traditional German apprenticeship and not to academic degree programs"
+                f"Please note that 'vocational training' refers to a traditional German vocational training and not to academic degree programs"
                 f"Do not include greetings or farewells, only the sections below as specified. "
                 f"Choose 3 different but suitable german vocational training in Germany from IHK that match the student's preferences: "
                 f"1. Hobbies: {hobbys}. "
@@ -256,20 +262,20 @@ class GPTManager:
         elif appr == "medium":
             prompt = (
                 f"Create a moderate english consultation text for a student and address them directly,who is interested in a traditional vocational training offered from german IHK. "
-                f"Please note that 'vocational training' refers to a traditional German apprenticeship and not to academic degree programs"
+                f"Please note that 'vocational training' refers to a traditional German vocational training and not to academic degree programs"
                 f"Do not include greetings or farewells, only the sections below as specified. "
                 f"Choose 2 different but suitable german vocational training in Germany that match the student's preferences: "
                 f"1. Hobbies: {hobbys}. "
                 f"2. Favorite school subjects: {subjects}. "
                 f"3. Bored by: {bores}. "
                 f"4. Prefers to work: {work_pref}. "
-                f"Describe each of the vocational training in detail and in a different manner. For each apprenticeship section, follow this structure: "
-                f"1. Description: First, provide a very detailed description of the apprenticeship with main subjects and typical course content. "
-                f"2. An explanation of why the apprenticeship fits the student with a logical justification based on the above-mentioned preferences of the student. "
-                f"3. Career opportunities: Detailed information about the future career opportunities with this apprenticeship, including at least one example of a possible career. "
+                f"Describe each of the vocational training in detail and in a different manner. For each vocational training section, follow this structure: "
+                f"1. Description: First, provide a very detailed description of the vocational training with main subjects and typical course content. "
+                f"2. An explanation of why the vocational training fits the student with a logical justification based on the above-mentioned preferences of the student. "
+                f"3. Career opportunities: Detailed information about the future career opportunities with this vocational training, including at least one example of a possible career. "
                 f"4. Further similar vocational training: List numerically at the end of each section 2 additional vocational training in bullet points that match the student's preferences. "
                 f"Use clear and precise language. "
-                f"Create a section for each apprenticeship with numbering, example: 1. Apprenticeship: Sport Management, then \n"
+                f"Create a section for each vocational training with numbering, example: 1. Vocational training: IT Specialist, then \n"
                 f"After each section, a double line break should be added in the form of 8 dashes, example: --------. "
                 f"Remain professional and objective and use the 'you' form."
             )
@@ -277,15 +283,15 @@ class GPTManager:
         else:
             prompt = (
                 f"Create a short english consultation text for a student and address them directly, who is interested in a traditional vocational training offered from german IHK. "
-                f"Please note that 'vocational training' refers to a traditional German apprenticeship and not to academic degree programs"
+                f"Please note that 'vocational training' refers to a traditional German vocational training and not to academic degree programs"
                 f"Choose 3 different but suitable german vocational training in Germany that match the student's preferences: "
                 f"1. Hobbies: {hobbys}. "
                 f"2. Favorite school subjects: {subjects}. "
                 f"3. Bored by: {bores}. "
                 f"4. Prefers to work: {work_pref}. "
                 f"Do not include greetings, farewells, or congratulations. "
-                f"Create a section for each apprenticeship with numbering including a line break. "
-                f"Example: 1. Apprenticeship: Sport Management including line break. "
+                f"Create a section for each vocational training with numbering including a line break. "
+                f"Example: 1. Vocational training: IT Specialist including line break. "
                 f"Describe why the vocational training might fit the student. "
                 f"Remain professional and objective and use the 'you' form."
             )
