@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 def main():
     ####### DB Area #######
     db_manager = DatabaseManager()                                  # db_name='db_information.db' is already specified in the class
-    student_id =2                                                   # Define the student ID to retrieve
+    student_id =3                                                  # Define the student ID to retrieve
     student_data = db_manager.get_student_data(student_id)          # Retrieve student data
 
     if student_data:                                                # Check if data was retrieved and print it
@@ -38,7 +38,7 @@ def main():
     pdf_manager.add_paragraph(study_text)
     pdf_manager.add_subtitle("Your prospects for a dual study program:")
     pdf_manager.add_paragraph(dual_text)
-    pdf_manager.add_subtitle("Your prospects for an apprenticeship:")
+    pdf_manager.add_subtitle("Your prospects for a vocational training:")
     pdf_manager.add_paragraph(appr_text)
     pdf_manager.add_subtitle("Summary:")
     pdf_manager.add_paragraph(summary_text)
