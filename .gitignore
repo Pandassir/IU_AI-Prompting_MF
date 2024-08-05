@@ -1,5 +1,5 @@
-# Ignoriere die .env-Datei
+# Ignore .env-file
 .env
 
-# Ignoriere die Datei unit_tests.py
+# Ignore file unit_tests.py
 unit_tests.py
